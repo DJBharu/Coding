@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title> My Third Web Page </title>
+  <script> function GuessingGame() {
+    var number = Math.round( Math.random() * 100);
+    var guess = "";
+    while (guess != number) {
+        guess = prompt("Guess a number between 1 and 100")
+      if ( guess < number )
+          alert("Too low.");
+      else if ( guess > number )
+          alert("Too high.");
+      else
+          alert("Correct! YOU WIN!")
+    }
+    var name = prompt("What is your name?");
+    for (var n = 1 ; n <= 1000 ; n++){
+      document.write( name + " Wins! ");
+          }
+    }
+</script>
+</head>
+<body bgcolor = royalblue >
+  <h1><b><center><u><font color = gold> !Bharat's First Web Page! </font></u></center></b></h1>
+  <h2><i><font color = White><center> I'm not just learning JavaScript, I'm also learning some HTML! </center></font></i></h2>
+  <p><font color = yellow> I can even mix JavaScript programs into my HTML pages-
+    Click the button down below to see one of my JavaScript programs! </font></p>
+    <button onclick="GuessingGame()"> Click to see my Java Script program </button>
+</body>
+</html>
